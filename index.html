@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Word</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <div class="game" id="game">
+        <h3 class="word-title" id="word-title"></h3>
+        <p class="word-list" id="word-list"></p>
+
+        <input
+          type="text"
+          class="answer-input"
+          id="input"
+          placeholder=""
+          autofocus
+          spellcheck="false"
+          autocomplete="off"
+        />
+
+        <div class="guesses-left" id="guesses-left"></div>
+
+        <div class="result" id="result"></div>
+
+        <div id="timer"></div>
+      </div>
+      <div class="helper">
+        <h3 class="check-list" id="check-list"></h3>
+        <div class="guess-container"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
